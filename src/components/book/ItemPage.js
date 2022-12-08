@@ -24,12 +24,20 @@ const ItemPage = () => {
       {oneBook && (
         <>
           <h1>{oneBook.title}</h1>
+
+          
           <h2>{oneBook.authors[0].name}</h2>
           <h4>
             {oneBook.authors[0].birth_year} - {oneBook.authors[0].death_year}{" "}
           </h4>
           <h3>{oneBook.languages}</h3>
           <h3>{oneBook.bookshelves}</h3>
+
+        {/*   <embed src="file.txt"> // This will show the text contained in file.txt in the page */}
+
+        <embed src={oneBook.formats['text/plain']}/>
+
+
           <button
             onClick={
               oneBook.favourite !== true
@@ -45,6 +53,7 @@ const ItemPage = () => {
             <Link to={`/books/${id}/read`}>Читать</Link>
           </button>
         </>
+
       )}
     </>
   );
