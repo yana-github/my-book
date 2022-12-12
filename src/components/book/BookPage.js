@@ -27,10 +27,10 @@ const BookPage = () => {
       {books && (searchBook? searchBook: books).map((book) => (
           <BookItem key={book.id} {...book} onClick={handleClick} />
         ))}
-      {/* 
-<BookList/>  */}
     </>
   );
+
+
 };
 
 export default BookPage;

@@ -1280,20 +1280,20 @@ const bookReducer = (state = initialState, action) => {
     case "DELETE_BOOK":
       books = state.books.filter((el) => el.id !== action.payload);
       return { ...state, books: books };
-    case "ADD_BOOK_TO_FAVORITES":
-      books = state.books.map((item) => {
-        if (item.id !== action.payload) {
-          return item;
+    case "ADD_BOOK_TO_FAV":
+      books = state.books.map((el) => {
+        if (el.id !== action.payload) {
+          return el;
         }
-        return { ...item, favourite: true };
+        return { ...el, favourite: true };
       });
       return { ...state, books: books };
-    case "REMOVE_BOOK_FROM_FAVORITES":
-      books = state.books.map((item) => {
-        if (item.id !== action.payload) {
-          return item;
+    case "REMOVE_BOOK_FROM_FAV":
+      books = state.books.map((el) => {
+        if (el.id !== action.payload) {
+          return el;
         }
-        return { ...item, favourite: false };
+        return { ...el, favourite: false };
       });
       return { ...state, books: books };
 
