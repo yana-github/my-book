@@ -54,7 +54,7 @@ const ItemPage = () => {
             <Link to={`/books/${id}/read`}>Читать</Link>
           </button>
           <br />
-          <embed src={oneBook.formats["text/plain"]} width="600" height="600" />
+        {/*   <embed src={oneBook.formats["text/plain"]} width="600" height="600" /> */}
         </>
       )}
     </>

@@ -1268,7 +1268,6 @@
 
 const initialState = {
   books: [],
-  favourite: false,
 };
 
 const bookReducer = (state = initialState, action) => {
