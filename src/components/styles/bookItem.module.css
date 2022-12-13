@@ -1,46 +1,75 @@
+.container {
+  background-color: white;
+  padding: 0 16px;
+}
+
 .bookItem {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  border: 5px solid grey;
-  padding: 10px;
-  margin: 0;
-  border: 1px solid black;
+  border-bottom: 3px solid grey;
+  padding: 10px 0;
 }
 
 .bookItemImg {
-  display: flex;
-  align-items: center;
-  width: 35%;
+  width: 40%;
 }
 
 .bookItemInfo {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  justify-content: space-between;
+  width: 60%;
   padding: 0 2%;
 }
 
-.bookItemButtons {
-  display: flex;
-  flex-direction: column;
-  margin-top: 90px;
+.bookItemHead h2 {
+  font-size: 20px;
+  margin-bottom: 8%;
 }
 
 .bookItemBtn {
-  padding: 1em;
-  margin: 0;
-  font-size: 16px;
-  border-radius: 1em;
-  border: none;
+  width: 40%;
+  height: 3em;
+  margin: 2% auto;
+  margin-right: 10px;
+  border: whitesmoke;
   background-color: cadetblue;
-  cursor: pointer;
-  width: 30%;
-  margin-bottom: 5%;
-  color: aliceblue;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
   text-decoration: none;
+  border-radius: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 0 0px rgba(255, 255, 255, 0.081);
+  transition: 0.3s;
 }
 
-.bookItemBtn:hover {
-  background-color: rgb(21, 214, 248);
+.bookItemBtn:active {
+  box-shadow: 0 0px 0 0px transparent;
+  transform: translateY(8px);
+}
+
+.bookItemBtnDel {
+  width: 40%;
+  height: 3em;
+  margin: 2% auto;
+  margin-right: 10px;
+  border: whitesmoke;
+  background-color: lightslategray;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 0 0px rgba(255, 255, 255, 0.081);
+  transition: 0.3s;
+}
+
+.bookItemBtn:active {
+  box-shadow: 0 0px 0 0px transparent;
+  transform: translateY(8px);
 }
