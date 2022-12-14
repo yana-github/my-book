@@ -8,7 +8,7 @@ import { deleteBook } from "../../redux/book/actions";
 
 
 
-const BookList = () => {
+const BookPage = () => {
   const dispatch = useDispatch();
   const books = useSelector((state) => state.book.books);
   const searchBook = useSelector((state) => state.search.search);
@@ -31,4 +31,4 @@ const BookList = () => {
 
 };
 
-export default BookList;
+export default BookPage;

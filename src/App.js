@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchBooks } from "./services/books";
 
-import BookList from "./components/book/BookList";
+import BookPage from "./components/book/BookPage";
 import FavoritesPage from "./components/book/FavoritesPage";
 
 import ItemPage from "./components/book/ItemPage";
@@ -25,7 +25,7 @@ const App = () => {
     <>
       <Menu />
       <Routes>
-        <Route path="/" element={<BookList />} />
+        <Route path="/" element={<BookPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/books/:id" element={<ItemPage />} />
        <Route path="/books/:id/read" element={<ReadPage />} />
