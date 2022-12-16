@@ -24,7 +24,7 @@ const persistConfig = {
 const reducers = combineReducers({
   book: persistReducer(persistConfig, bookReducer),
   theme: themeReducer,
-  search: persistReducer(persistConfig, searchReducer),
+  search: searchReducer,
 });
 
 let store = createStore(reducers, applyMiddleware(thunk,logger));

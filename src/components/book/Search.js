@@ -1,19 +1,24 @@
 import { useDispatch } from "react-redux";
-import { searchBook } from "../../redux/search/actions";
+import { useEffect} from "react";
+import { searchBook, clearSearch} from "../../redux/search/actions";
 
-const Search = ({ books }) => {
+const Search = ({searchBooks}) => {
   const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    dispatch(clearSearch());
+  }, []);
+
 
   const searchingBook = (e) => {
     let inputValue = e.target.value;
-    if (books) {
-        let copyBooks = [...books];
-        if (inputValue) {
-          let filterBooks = copyBooks.filter((book) => {
-            return book.title
-              .toLowerCase()
-              .includes(inputValue.toLowerCase().split(" ").join(""));
-          });
+    if (searchBooks) {
+      let copyBooks = [...searchBooks];
+      if (inputValue) {
+        let filterBooks = copyBooks.filter((book) => {
+          return book.title.toLowerCase().includes(inputValue.toLowerCase());
+        });
 
         dispatch(searchBook(filterBooks));
       } else {
@@ -21,6 +26,8 @@ const Search = ({ books }) => {
       }
     }
   };
+
+
   return (
     <>
       <input

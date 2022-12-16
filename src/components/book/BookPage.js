@@ -21,7 +21,7 @@ const BookPage = () => {
 
   return (
     <>
-       <Search books={books} />
+       <Search searchBooks={books} />
       {books && (searchBook? searchBook: books).map((book) => (
           <BookItem key={book.id} {...book} onClick={handleClick} />
         ))}
