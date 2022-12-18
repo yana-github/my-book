@@ -5,37 +5,37 @@
 .searchForm {
   display: flex;
   justify-content: flex-start;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 40%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 60%;
   background: transparent;
-  border-bottom: 5px solid cadetblue;
+  border-bottom: 4px solid cadetblue;
 }
 
 .searchFormInput {
   width: 100%;
-  height: 50px;
-  padding-left: 10%;
-  font-size: 1.2rem;
+  height: 2em;
+  padding-left: 3%;
+  font-size: 1em;
   border: none;
   outline: none;
   background: transparent;
 }
 
 .searchFormInput::-webkit-input-placeholder {
-  color: #070707;
+  color: gray;
   font-style: italic;
 }
 .searchFormInput:-moz-placeholder {
-  color: #070707;
+  color: gray;
   font-style: italic;
 }
 .searchFormInput:-ms-input-placeholder {
-  color: #070707;
+  color: gray;
   font-style: italic;
 }
 
 .searchFormIco {
-  width: 15%;
-  height: 15%;
+  width: 10%;
+  height: 10%;
 }

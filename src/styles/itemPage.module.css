@@ -15,17 +15,17 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 50%;
 }
 
 .itemHead h2 {
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: left;
   margin-bottom: 5%;
 }
 
 .itemInfo {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
 .itemInfo span {
@@ -34,9 +34,9 @@
 }
 
 .itemInfo h3 {
-  font-size: 1em;
+  font-size: 0.8em;
   text-align: left;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .itemButtons {
@@ -44,14 +44,14 @@
 }
 
 .itemBtn {
-  width: 40%;
+  width: 8em;
   height: 3em;
   margin: 2% auto;
   margin-right: 10px;
   border: whitesmoke;
   background-color: cadetblue;
   color: white;
-  font-size: 1rem;
+  font-size: 0.8em;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
@@ -67,14 +67,14 @@
 }
 
 .itemBtnFav {
-    width: 40%;
-    height: 3em;
+  width: 8em;
+  height: 3em;
     margin: 2% auto;
     margin-right: 10px;
     border: whitesmoke;
     background-color: rgb(119, 166, 200);
     color: white;
-    font-size: 1rem;
+    font-size: 0.8em;
     font-weight: 400;
     text-align: center;
     text-decoration: none;

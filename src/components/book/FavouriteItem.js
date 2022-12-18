@@ -18,7 +18,7 @@ const FavouriteItem = ({ onClick, id, title, authors }) => {
 
           <div className={styles.bookItemButtons}>
             <button className={styles.bookItemBtn} onClick={() => onClick(id)}>
-              Remove from Favorites
+            Remove from ♥
             </button>
           </div>
         </div>
