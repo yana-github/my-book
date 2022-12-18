@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import CustomizedSwitches from "./SwitcherTheme";
 
 import classNames from "classnames";
-import styles from "../styles/menu.module.css";
+import styles from "../../styles/menu.module.css";
 
 import { changeTheme } from "../../redux/theme/actions";
 import { useDispatch, useSelector } from "react-redux";
@@ -23,10 +23,10 @@ const Menu = () => {
   return (
     <header className={classHeader}>
       <Link to="/" className={styles.link}>
-        Главная
+        Home
       </Link>
       <Link to="/favorites" className={styles.link}>
-        Избранное
+        Favorites
       </Link>
 
       <CustomizedSwitches switchTheme={switchTheme} />

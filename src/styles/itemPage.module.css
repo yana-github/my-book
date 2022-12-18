@@ -1,0 +1,90 @@
+.container {
+    padding: 0 2%;
+  }
+
+.bookItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHead {
+  margin-bottom: 10%;
+}
+
+.itemImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.itemHead h2 {
+  font-size: 1.2em;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.itemInfo {
+    margin-bottom: 10%;
+  }
+
+.itemInfo span {
+  color: darkslategrey;
+  text-transform: uppercase;
+}
+
+.itemInfo h3 {
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.itemButtons {
+  text-align: center;
+}
+
+.itemBtn {
+  width: 40%;
+  height: 3em;
+  margin: 2% auto;
+  margin-right: 10px;
+  border: whitesmoke;
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 0 0px rgba(255, 255, 255, 0.081);
+  transition: 0.3s;
+}
+
+.itemBtn:active {
+  box-shadow: 0 0px 0 0px transparent;
+  transform: translateY(8px);
+}
+
+.itemBtnFav {
+    width: 40%;
+    height: 3em;
+    margin: 2% auto;
+    margin-right: 10px;
+    border: whitesmoke;
+    background-color: rgb(119, 166, 200);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 0 0px rgba(255, 255, 255, 0.081);
+    transition: 0.3s;
+  }
+  
+  .itemBtnFav:active {
+    box-shadow: 0 0px 0 0px transparent;
+    transform: translateY(8px);
+  }

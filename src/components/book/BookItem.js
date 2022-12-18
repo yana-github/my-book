@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-import styles from "../styles/bookItem.module.css";
+import { useNavigate } from "react-router-dom";
+import styles from "../../styles/bookItem.module.css";
 
 const BookItem = ({ onClick, id, title, authors }) => {
+  const navigate = useNavigate();
   const picURL = "https://www.gutenberg.org/cache/epub/";
   const picPath = `${id}/pg${id}.cover.medium.jpg`;
 
@@ -13,21 +14,29 @@ const BookItem = ({ onClick, id, title, authors }) => {
         </div>
         <div className={styles.bookItemInfo}>
           <div className={styles.bookItemHead}>
-          <h2>{title}</h2>
-          <h3>{authors[0].name}</h3>
+            <h2>{title}</h2>
+            <h3>{authors[0].name}</h3>
           </div>
-
           <div className={styles.bookItemButtons}>
-            <button className={styles.bookItemBtn}>
-              <Link to={`/books/${id}`}>Подробнее</Link>
-            </button>
-            <button className={styles.bookItemBtnDel} onClick={() => onClick(id)}>
-              Удалить
-            </button>
-          </div>
+
+<button
+  className={styles.bookItemBtnDel}
+  onClick={() => onClick(id)}
+>
+  Remove
+</button>
+<button
+  className={styles.bookItemBtn}
+  onClick={() => navigate(`/books/${id}`)}
+>
+  Detail
+</button>
+</div>
         </div>
+
       </div>
-      </div>
+
+    </div>
   );
 };
 

@@ -1,15 +1,16 @@
 import { useDispatch } from "react-redux";
-import { useEffect} from "react";
-import { searchBook, clearSearch} from "../../redux/search/actions";
+import { useEffect } from "react";
+import { searchBook, clearSearch } from "../../redux/search/actions";
 
-const Search = ({searchBooks}) => {
+import styles from "../../styles/search.module.css";
+import iconSearch from "../../images/icons-search.png";
+
+const Search = ({ searchBooks }) => {
   const dispatch = useDispatch();
-
 
   useEffect(() => {
     dispatch(clearSearch());
   }, []);
-
 
   const searchingBook = (e) => {
     let inputValue = e.target.value;
@@ -27,16 +28,18 @@ const Search = ({searchBooks}) => {
     }
   };
 
-
   return (
-    <>
+    <form className={styles.searchForm}>
+      <img className={styles.searchFormIco} src={iconSearch} alt="iconSearch" />
       <input
-        type="text"
-        placeholder="Поиск книги"
+        className={styles.searchFormInput}
+        type="search"
+        placeholder="Search..."
         name="search"
+        autoComplete="off"
         onChange={searchingBook}
       />
-    </>
+    </form>
   );
 };
 

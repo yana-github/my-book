@@ -1,15 +1,11 @@
-import Favourites from './Favourites';
-
+import Favourites from "./Favourites";
 
 const FavouritePage = () => {
-    return (
-        <>
-        <Favourites/>;
-        </>
-    );
+  return (
+    <>
+      <Favourites />;
+    </>
+  );
 };
 
 export default FavouritePage;
-
-
-
