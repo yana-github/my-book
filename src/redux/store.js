@@ -23,7 +23,7 @@ const persistConfig = {
 
 const reducers = combineReducers({
   book: persistReducer(persistConfig, bookReducer),
-  theme: themeReducer,
+  theme: persistReducer(persistConfig,themeReducer),
   search: searchReducer,
 });
 

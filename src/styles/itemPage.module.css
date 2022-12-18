@@ -1,10 +1,7 @@
-.container {
-    padding: 0 2%;
-  }
-
 .bookItem {
   display: flex;
   flex-direction: column;
+  padding: 10% 2%;
 }
 
 .itemHead {
@@ -16,37 +13,37 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  max-height: 300px;
 }
 
 .itemHead h2 {
-  font-size: 1em;
+  font-size: 1.1em;
   text-align: left;
   margin-bottom: 5%;
 }
 
 .itemInfo {
-    margin-bottom: 5%;
-  }
+  margin-bottom: 5%;
+}
 
 .itemInfo span {
-  color: beige;
   text-transform: uppercase;
 }
 
 .itemInfo h3 {
   font-size: 0.8em;
   text-align: left;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
 
 .itemButtons {
   text-align: center;
+  margin: 6% auto;
 }
 
 .itemBtn {
   width: 8em;
   height: 3em;
-  margin: 2% auto;
   margin-right: 10px;
   border: whitesmoke;
   background-color: cadetblue;
@@ -69,22 +66,132 @@
 .itemBtnFav {
   width: 8em;
   height: 3em;
+  margin-right: 10px;
+  border: whitesmoke;
+  background-color: rgb(119, 166, 200);
+  color: white;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 0 0px rgba(255, 255, 255, 0.081);
+  transition: 0.3s;
+}
+
+.itemBtnFav:active {
+  box-shadow: 0 0px 0 0px transparent;
+  transform: translateY(8px);
+}
+
+@media (min-width: 576px) {
+  .itemImg {
+    width: 30%;
+  }
+  .bookItem {
+    padding: 2%;
+  }
+  .itemHead {
+    margin-bottom: 5%;
+  }
+  .itemHead h2 {
+    font-size: 1.2em;
+    margin-bottom: 2%;
+  }
+  .itemInfo h3 {
+    font-size: 0.9em;
+    margin-bottom: 2%;
+  }
+  .itemInfo {
+    margin-bottom: 2%;
+  }
+  .itemButtons {
     margin: 2% auto;
-    margin-right: 10px;
-    border: whitesmoke;
-    background-color: rgb(119, 166, 200);
-    color: white;
-    font-size: 0.8em;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 1em;
-    cursor: pointer;
-    box-shadow: 0 4px 0 0px rgba(255, 255, 255, 0.081);
-    transition: 0.3s;
   }
-  
-  .itemBtnFav:active {
-    box-shadow: 0 0px 0 0px transparent;
-    transform: translateY(8px);
+  .itemBtn {
+    width: 9em;
+    font-size: 0.9em;
   }
+  .itemBtnFav {
+    width: 9em;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 768px) {
+  .itemImg {
+    width: 25%;
+  }
+  .bookItem {
+    padding: 5% 2%;
+  }
+  .itemHead h2 {
+    font-size: 1.3em;
+    margin-bottom: 2%;
+  }
+  .itemInfo h3 {
+    font-size: 1em;
+    margin-bottom: 2%;
+  }
+  .itemInfo {
+    margin-bottom: 2%;
+  }
+
+  .itemBtn {
+    font-size: 1em;
+  }
+  .itemBtnFav {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .itemImg {
+    width: 25%;
+  }
+  .bookItem {
+    padding: 3% 2%;
+  }
+  .itemHead {
+    margin-bottom: 1%;
+  }
+  .itemHead h2 {
+    font-size: 1.4em;
+    margin-bottom: 1%;
+  }
+  .itemInfo h3 {
+    font-size: 1.1em;
+    margin-bottom: 1%;
+  }
+  .itemInfo {
+    margin-bottom: 1%;
+  }
+  .itemBtn {
+    font-size: 1.1em;
+  }
+  .itemBtnFav {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .itemImg {
+    width: 20%;
+  }
+  .bookItem {
+    padding: 2% 2%;
+  }
+  .itemHead h2 {
+    font-size: 1.5em;
+  }
+  .itemInfo h3 {
+    font-size: 1.2em;
+  }
+  .itemBtn {
+    font-size: 1.2em;
+  }
+  .itemBtnFav {
+    font-size: 1.2em;
+  }
+}

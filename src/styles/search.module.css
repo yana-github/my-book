@@ -39,3 +39,47 @@
   width: 10%;
   height: 10%;
 }
+
+@media (min-width: 576px) {
+  .searchForm {
+    padding-top: 3%;
+    margin-bottom: 2%;
+    width: 60%;
+  }
+
+  .searchFormInput {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .searchForm {
+    padding-top: 2%;
+    margin-bottom: 1%;
+    width: 60%;
+  }
+  .searchFormInput {
+    font-size: 1.2em;
+  }
+  .searchFormIco {
+    width: 12%;
+    height: 12%;
+  }
+}
+
+@media (min-width: 992px) {
+  .searchForm {
+    padding-top: 1.5%;
+    margin-bottom: 0.5%;
+    width: 60%;
+  }
+  .searchFormInput {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .searchFormInput {
+    font-size: 1.4em;
+  }
+}

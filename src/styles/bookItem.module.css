@@ -1,10 +1,5 @@
-.container {
-  padding: 0 2%;
-}
-
 .bookItem {
   display: flex;
-
   border-bottom: 3px solid grey;
   padding: 3% 0;
 }
@@ -82,4 +77,105 @@
 .bookItemBtnDel:active {
   box-shadow: 0 0px 0 0px transparent;
   transform: translateY(8px);
+}
+
+@media (min-width: 576px) {
+  .bookItemImg img {
+    min-width: 180px;
+    max-height: 220px;
+    object-fit: contain;
+  }
+  .bookItemHead h2 {
+    font-size: 1em;
+    margin-bottom: 4%;
+  }
+
+  .bookItemHead h3 {
+    font-size: 0.9em;
+  }
+
+  .bookItemBtn {
+    width: 7em;
+    height: 3em;
+    font-size: 0.9em;
+  }
+
+  .bookItemBtnDel {
+    width: 7em;
+    height: 3em;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 768px) {
+  .bookItemImg img {
+    min-width: 190px;
+    max-height: 230px;
+    object-fit: contain;
+  }
+  .bookItemHead h2 {
+    font-size: 1.1em;
+    margin-bottom: 3%;
+  }
+
+  .bookItemHead h3 {
+    font-size: 1em;
+  }
+  .bookItemBtn {
+    width: 7.5em;
+    height: 3em;
+    font-size: 1em;
+  }
+
+  .bookItemBtnDel {
+    width: 7.5em;
+    height: 3em;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .bookItemImg img {
+    min-width: 200px;
+    max-height: 240px;
+    object-fit: contain;
+  }
+  .bookItemHead h2 {
+    font-size: 1.2em;
+    margin-bottom: 2%;
+  }
+
+  .bookItemHead h3 {
+    font-size: 1.1em;
+  }
+  .bookItemBtn {
+    font-size: 1.1em;
+  }
+
+  .bookItemBtnDel {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bookItemImg img {
+    min-width: 220px;
+    max-height: 260px;
+    object-fit: contain;
+  }
+  .bookItemHead h2 {
+    font-size: 1.3em;
+    margin-bottom: 2%;
+  }
+
+  .bookItemHead h3 {
+    font-size: 1.2em;
+  }
+  .bookItemBtn {
+    font-size: 1.2em;
+  }
+
+  .bookItemBtnDel {
+    font-size: 1.2em;
+  }
 }

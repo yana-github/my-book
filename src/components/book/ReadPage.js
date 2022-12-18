@@ -10,8 +10,9 @@ const ReadPage = () => {
     <embed
       src={`    https://www.gutenberg.org/cache/epub/${id}/pg${id}-images.html`}
       width='100%'
-      height='1500'
+      height='900'
       type="text/html"
+      id="element"
     />
     </ScreenContainer>
   );

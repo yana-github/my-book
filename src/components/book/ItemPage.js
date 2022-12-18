@@ -30,9 +30,7 @@ const ItemPage = () => {
         {oneBook && (
           <>
             <div className={styles.itemHead}>
-              <h2> 
-                {oneBook.title}
-              </h2>
+              <h2>{oneBook.title}</h2>
               <img
                 className={styles.itemImg}
                 src={`${picURL}${picPath}`}
@@ -40,6 +38,11 @@ const ItemPage = () => {
               />
             </div>
             <div className={styles.itemInfo}>
+              <h3>
+                {" "}
+                <span>Title: </span>
+                {oneBook.title}
+              </h3>
               <h3>
                 <span>Author: </span> {oneBook.authors[0].name}
               </h3>
@@ -57,26 +60,24 @@ const ItemPage = () => {
                 {oneBook.subjects[0]}
               </h3>
             </div>
-                    <div className={styles.itemButtons}>
-            <button
-              className={styles.itemBtnFav}
-              onClick={
-                oneBook.favourite !== true
-                  ? () => dispatch(addBookToFavorites(oneBook.id))
-                  : () => dispatch(removeBookFromFavorites(oneBook.id))
-              }
-            >
-              {oneBook.favourite === true
-                ? "Remove from ♥"
-                : "Add to ♥"}
-            </button>
-            <button
-              className={styles.itemBtn}
-              onClick={() => navigate(`/books/${id}/read`)}
-            >
-              Open eBook
-            </button>
-               </div>
+            <div className={styles.itemButtons}>
+              <button
+                className={styles.itemBtnFav}
+                onClick={
+                  oneBook.favourite !== true
+                    ? () => dispatch(addBookToFavorites(oneBook.id))
+                    : () => dispatch(removeBookFromFavorites(oneBook.id))
+                }
+              >
+                {oneBook.favourite === true ? "Remove from ♥" : "Add to ♥"}
+              </button>
+              <button
+                className={styles.itemBtn}
+                onClick={() => navigate(`/books/${id}/read`)}
+              >
+                Open eBook
+              </button>
+            </div>
           </>
         )}
       </div>

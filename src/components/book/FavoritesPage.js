@@ -4,7 +4,7 @@ import ScreenContainer from "../ScreenContsiner";
 const FavouritePage = () => {
   return (
     <ScreenContainer>
-      <Favourites />;
+      <Favourites />
     </ScreenContainer>
   );
 };

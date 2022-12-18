@@ -4,7 +4,6 @@ import BookItem from './BookItem';
 import Search from './Search';
 
 import { deleteBook } from '../../redux/book/actions';
-import styles from "../../styles/bookPage.module.css";
 
 import ScreenContainer from "../ScreenContsiner";
 

@@ -17,22 +17,9 @@ body {
   margin: 0 auto;
 }
 
-.container_light{
-  max-width: calc(1170px + 32px);
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-  background-color: antiquewhite;
+::-webkit-scrollbar {
+  width: 0;
 }
-
-.container_dark{
-  max-width: calc(1170px + 32px);
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-  background-color: blue;
-}
-
 
 
 a {

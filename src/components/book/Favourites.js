@@ -3,7 +3,6 @@ import { removeBookFromFavorites } from "../../redux/book/actions";
 
 import FavouriteItem from "./FavouriteItem";
 import Search from "./Search";
-import styles from "../../styles/favorites.module.css";
 
 const Favourites = () => {
   const dispatch = useDispatch();
@@ -16,14 +15,14 @@ const Favourites = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       <Search searchBooks={favoritesBooks} />
       {favoritesBooks &&
         (searchFavBook ? searchFavBook : favoritesBooks).map((book) => (
           <FavouriteItem key={book.id} {...book} onClick={handleClick} />
         ))}
-    </div>
-  );
+    </>
+  )
 };
 
 export default Favourites;
