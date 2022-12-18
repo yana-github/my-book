@@ -6,6 +6,8 @@ import Search from './Search';
 import { deleteBook } from '../../redux/book/actions';
 import styles from "../../styles/bookPage.module.css";
 
+import ScreenContainer from "../ScreenContsiner";
+
 const BookPage = () => {
   const dispatch = useDispatch();
   const books = useSelector((state) => state.book.books);
@@ -16,13 +18,13 @@ const BookPage = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <ScreenContainer>
       <Search searchBooks={books} />
       {books &&
         (searchBook ? searchBook : books).map((book) => (
           <BookItem key={book.id} {...book} onClick={handleClick} />
         ))}
-    </div>
+    </ScreenContainer>
   );
 };
 

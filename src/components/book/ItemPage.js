@@ -9,6 +9,7 @@ import {
 } from "../../redux/book/actions";
 
 import styles from "../../styles/itemPage.module.css";
+import ScreenContainer from "../ScreenContsiner";
 
 const ItemPage = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const ItemPage = () => {
     setOneBook(oneBook[0]);
   }, [booksList, id]);
   return (
-    <div className={styles.container}>
+    <ScreenContainer>
       <div className={styles.bookItem}>
         {oneBook && (
           <>
@@ -79,7 +80,7 @@ const ItemPage = () => {
           </>
         )}
       </div>
-    </div>
+    </ScreenContainer>
   );
 };
 
