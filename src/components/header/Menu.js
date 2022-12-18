@@ -8,19 +8,22 @@ import { changeTheme } from "../../redux/theme/actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const Menu = () => {
-  const dispatch = useDispatch();
+/*   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.theme);
 
   const switchTheme = () => {
     const nextTheme = theme === "dark" ? "light" : "dark";
     dispatch(changeTheme(nextTheme));
-  };
+  }; */
 
   const classHeader = classNames(styles.header, {
     [styles.header_night]: theme === "dark",
-  });
+  }); 
+
 
   return (
+    <>
+
     <header className={classHeader}>
       <Link to="/" className={styles.link}>
         Home
@@ -29,8 +32,9 @@ const Menu = () => {
         Favorites
       </Link>
 
-      <CustomizedSwitches switchTheme={switchTheme} />
+      <CustomizedSwitches  switchTheme={switchTheme} />
     </header>
+     </>
   );
 };
 

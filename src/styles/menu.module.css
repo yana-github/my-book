@@ -16,3 +16,13 @@
   font-size: 0.8em;
   font-weight: 600;
 }
+
+.body {
+  background-color: rgb(247, 199, 199);
+  color: #333333;
+}
+
+.body_night {
+  background-color: darkslategrey;
+  color: whitesmoke;
+}

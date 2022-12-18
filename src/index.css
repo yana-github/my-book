@@ -5,17 +5,32 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #1C1E21;
+}
+
+html[data-theme="dark"] {
+  --background-color: #18191a;
+  --text-color: #f5f6f7;
+}
+
 body {
-  background-color: white;
+  background-color: rgb(247, 199, 199);
   color: #333333;
 }
 
-.container {
+.body_night {
+  background-color: darkslategrey;
+  color: whitesmoke;
+}
+
+/* .container {
   max-width: calc(1170px + 32px);
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
-}
+} */
 
 a {
   text-decoration: none;
